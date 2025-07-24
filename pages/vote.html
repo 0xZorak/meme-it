@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just meme it</title>
+    <title>Vote | Just meme it</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -16,25 +16,32 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/vote.css">
   </head>
 
   <body>
     <div class="sidebar">
+      <div class="logo-section">
+        <a class="sidebar-icon" href="../index.html">
+          <img src="../images/logo.png" alt="Logo" class="sidebar-logo" />
+        </a>
+        <div class="logo-underline"></div>
+      </div>
       <div class="top-icons">
-        <a class="sidebar-icon" href="pages/vote.html">
+        <a class="sidebar-icon active" href="vote.html">
           <i class="fa-solid fa-rocket"></i>
           <span>Vote</span>
         </a>
-        <a class="sidebar-icon" href="pages/leaderboard.html">
+        <a class="sidebar-icon" href="rank.html">
           <i class="fa-solid fa-trophy"></i>
-          <span>Leaderboard</span>
+          <span>Rank</span>
         </a>
-        <a class="sidebar-icon" href="pages/assets.html">
+        <a class="sidebar-icon" href="assets.html">
           <i class="fa-solid fa-coins"></i>
-          <span>My Assets</span>
+          <span>Assets</span>
         </a>
-        <a class="sidebar-icon" href="pages/user.html">
+        <a class="sidebar-icon" href="user.html">
           <i class="fa-solid fa-user"></i>
           <span>User</span>
         </a>
@@ -52,15 +59,59 @@
       </div>
     </div>
 
-    <div class="left">
-      <p>Welcome to</p>
-      <h1>Just meme it</h1>
+    <div class="main-content">
+      <div class="topbar">
+        <span class="topbar-title">Shell Launchpad</span>
+        <div class="topbar-actions">
+          <button class="how-to-play-btn">How to play <span>&gt;</span></button>
+          <button class="login-btn">Login</button>
+        </div>
+      </div>
+      <div class="left">
+        <!-- <h1>Vote Memes</h1>
+        <p>Pick your favorite meme below!</p> -->
+      </div>
+      <div class="right">
+        <!-- Meme voting content goes here -->
+      </div>
     </div>
 
-    <div class="right">
-      <img src="images/pine.jpg" alt="meme" />
+    <!-- How to Play Modal -->
+    <div class="modal" id="howToPlayModal">
+      <div class="modal-content">
+        <span class="close-modal" data-close="howToPlayModal">&times;</span>
+        <h2>How to Play</h2>
+        <ul>
+          <li>What is Shell Launchpad?</li>
+          <ul>
+            <li>Now you can send your agent to DEX, beyond just Bonding Curve</li>
+            <li>Fair launch: Equal opportunity for all with no pre-sales</li>
+            <li>Low barrier to entry with only 1% transaction fee</li>
+          </ul>
+          <li>How to buy Agent Token?</li>
+          <ul>
+            <li>Find and interact with your favorite agents on MyShell and Twitter</li>
+            <li>Support agents using BNB</li>
+            <li>Cash out your profits anytime</li>
+          </ul>
+        </ul>
+        <button class="modal-action">Get your wallet ready and dive in!</button>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <span class="close-modal" data-close="loginModal">&times;</span>
+        <h2>Log in / Sign Up</h2>
+        <p>New here? We'll help you create an account in no time!</p>
+        <div class="login-options">
+          <button class="wallet-btn">Compass Wallet</button>
+          <button class="twitter-btn">Twitter</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
   </body>
 </html>
