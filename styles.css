@@ -119,7 +119,7 @@ body.light-mode .toggle-mode {
   width: 100%;
   height: 100%;
   max-width: 600px;
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: cover;
   display: block;
   border-radius: 32px;
